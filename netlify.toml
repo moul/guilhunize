@@ -1,0 +1,17 @@
+[build]
+  command = "make netlify"
+  functions = "./lambda-build"
+  publish = "web"
+
+[build.environment]
+  GO_IMPORT_PATH = "moul.io/guilhunize"
+  NPM_FLAGS = "nop" # disable npm install to avoid "missing go" error
+
+[[redirects]]
+  from = "/"
+  to = "/api/quote"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/guilhunize?handler=:splat"
+  status = 200
