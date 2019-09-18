@@ -17,5 +17,8 @@
         "url": "https://github.com/moul/guilhunize.git"
     },
     "bugs": "https://github.com/moul/guilhunize/issues",
-    "homepage": "https://moul.io/guilhunize"
+    "homepage": "https://moul.io/guilhunize",
+    "dependencies": {
+        "cool": "0.0.1"
+    }
 }

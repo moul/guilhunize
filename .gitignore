@@ -3,6 +3,7 @@
 *#
 .#*
 coverage.txt
+/lambda-build/
 
 # Vendors
 package-lock.json
