@@ -18,10 +18,36 @@
 
 ## Usage
 
+### Guilhunize (translate)
+
 ```console
-$ guilhunize -h
+$ guilhunize "salut, j'aime bien faire des refactors et des déchiffrement"
+salut, j'aime bien faire des refractos et des désenchiffrement
+$ echo "le chiffrement de scaleway" | guilhunize
+le cryptage de scalaway
+```
+
+### Quote
+
+```console
+$ guilhunize --quote
+hein, quoi ?
+$ guilhunize --quote
+vous etes qui ?
+$ guilhunize --quote
+il etait cavalier, c'etait un mauvais soldat
 ...
 ```
+
+## Test it live (lambda)
+
+### Guilhunize
+
+With httpie: `echo "j'aime bien les refactors" | http POST https://guilhunize.moul.io/api/guilhunize --body`
+
+### Quote
+
+Open your browser here: https://guilhunize.moul.io/api/quote
 
 ## Install
 
@@ -35,6 +61,18 @@ $ go get -u moul.io/guilhunize
 
 ```console
 $ brew install moul/moul/guilhunize
+```
+
+### Docker
+
+```console
+$ docker pull moul/guilhunize
+```
+
+### NPM
+
+```console
+$ npm install moul.io/guilhunize
 ```
 
 ### Download releases
