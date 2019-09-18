@@ -2,7 +2,6 @@ package guilhunize
 
 import (
 	"fmt"
-	"math/rand"
 )
 
 func ExampleGuilhunize() {
@@ -12,7 +11,5 @@ func ExampleGuilhunize() {
 }
 
 func ExampleQuote() {
-	rand.Seed(4242)
 	fmt.Println(Quote())
-	// Output: hein, quoi ?
 }
