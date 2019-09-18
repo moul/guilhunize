@@ -9,6 +9,7 @@ var mapping = [][2]string{
 	{"refactor", "refracto"},
 	{"refacto", "refracto"},
 	{"scaleway", "scalaway"},
+	{"bytecode", "bitcode"},
 	{"interface", "i-love-interface"},
 	{"déchiffrement", "désenchiffrement"},
 	{" chiffrement", " cryptage"},
