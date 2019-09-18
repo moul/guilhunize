@@ -1,6 +1,9 @@
 package guilhunize
 
-import "strings"
+import (
+	"math/rand"
+	"strings"
+)
 
 var mapping = [][2]string{
 	{"refactors", "refractos"},
@@ -21,6 +24,17 @@ func Guilhunize(input string) string {
 		input = strings.Replace(input, pair[0], pair[1], -1)
 	}
 	return input
+}
+
+var quotes = []string{
+	"hein, quoi ?",
+	"putain, fait chier catalina",
+	"vous etes qui ?",
+	"il etait cavalier, c'etait un mauvais soldat",
+}
+
+func Quote() string {
+	return quotes[rand.Intn(len(quotes))]
 }
 
 // FIXME: implement "Unguilhunize"
