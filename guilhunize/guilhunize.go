@@ -32,6 +32,8 @@ var quotes = []string{
 	"putain, fait chier catalina",
 	"vous etes qui ?",
 	"il etait cavalier, c'etait un mauvais soldat",
+	"chai po moi !",
+	"les fricadelles, c'est bon avec du pain de mie et du kiri.",
 }
 
 func Quote() string {
