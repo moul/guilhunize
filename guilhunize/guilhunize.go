@@ -15,6 +15,8 @@ var mapping = [][2]string{
 	{"bytecode", "bitcode"},
 	{"interface", "i-love-interface"},
 	{"déchiffrement", "désenchiffrement"},
+        {"clé-valeur", "key-valeur"},
+        {"key-value", "key-valeur"},
 	{" chiffrement", " cryptage"},
 }
 
