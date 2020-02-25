@@ -7,10 +7,10 @@ import (
 	"math/rand"
 	"os"
 	"strings"
-	"time"
 
 	cli "gopkg.in/urfave/cli.v2"
 	"moul.io/guilhunize/guilhunize"
+	"moul.io/srand"
 )
 
 func main() {
@@ -28,7 +28,7 @@ func main() {
 
 func run(c *cli.Context) error {
 	if c.Bool("quote") {
-		rand.Seed(time.Now().UnixNano())
+		rand.Seed(srand.Fast())
 		fmt.Println(guilhunize.Quote())
 		return nil
 	}
